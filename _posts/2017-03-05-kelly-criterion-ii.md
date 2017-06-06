@@ -12,7 +12,7 @@ The Kelly-Optimal bet is the set of values $$d_1, \ldots, d_n$$ that maximize th
 
 Let's try this out with a numerical solver in Excel:
 
-![link](http://i.imgur.com/uCAoYpj.png)
+![link](http://i.imgur.com/uCAoYpj.png){: .center-image}
 
 Here we're using solver to find the value of the yellow cells that maximizes `E(log(X))`. Excel is telling us to put 22% of our bankroll into Event 1 and 38% of our bankroll into Event 3. Notice that Event 3 has a 50% chance of occurring, though the market believes the chance is only 30%. Using the formula from our last post, we know that if we could bet in this contract alone, Kelly would have us wager (50% - 30%)/70% = 28.6 of our payroll. In this case, having more contracts allows us to increase our return.
 

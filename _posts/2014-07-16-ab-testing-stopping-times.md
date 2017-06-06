@@ -123,6 +123,6 @@ One can easily re-use this idea in the context of an A/B test; instead of the si
 
 *Two:* Airbnb has a [great article](http://nerds.airbnb.com/experiments-at-airbnb/) on the biased stopping time problem, and you should definitely check it out. As a nitpick, I disagree with this diagram:
 
-![diagram](http://nerds.airbnb.com/wp-content/uploads/2014/05/img6_dynamic_p.png)
+![diagram](https://cdn-images-1.medium.com/max/1000/0*bXK9atg4zQpVBm1C.png)
 
 In reality, the p-value never plateaus like that. (If you run an A/A test forever unless you hit a certain fixed p-value, you'll eventually get a false positive with probability \\(100\%\\). Similarly, if you peek constantly and you set a flat p-value, you inexorably increase your false positive rate.) I think that this is a misstatement rather than a mistake; judging from the rest of the article, what's probably meant is that they run experiments for no more than 30 days (or some other fixed value tied to sample size), and decide whether a significan effect exists at that point using \\(p = 0.05\\) (as we did above, deciding to stop and evaluate when the number of flips reached \\(100\\) if we hadn't already squealed by then). Anyway, the article is great, and you should definitely read it! 

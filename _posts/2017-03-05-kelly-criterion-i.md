@@ -17,7 +17,7 @@ After a derivative and some arithmetic: The `f` that maximizes this is `f = (p_t
 
 Let's plug in some numbers as an example. Suppose that the market thinks the probability of heads is `0.6`. However, we know that the true probability of heads is `0.8`. Then we should bet `0.2/0.4 = 50%` of our bankroll on each coin flip. Similarly for other values of `p_market` and `p_true`:
 
-![link](http://i.imgur.com/Ky9wItz.png)
+![link](http://i.imgur.com/Ky9wItz.png){: .center-image}
 
 Continuing the `p_market = 0.6` and `p_true = 0.8` example, we have one last thing to calculate, which is our IRR. Using the same `E(log(X))` reasoning, our IRR 'in the long run' should be
 

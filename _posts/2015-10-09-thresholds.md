@@ -31,7 +31,7 @@ To see this in action, let's look at the famous [telecom churn data set](https:/
 
 Let's build a classifier to solve this task. We'll use an out-of-the-box random forest model:
 
-```
+```python
 # Imports
 import pandas as pd
 import numpy as np
@@ -78,7 +78,7 @@ predictions = clf.predict_proba(test_signals)[:,1]
 
 Now let's see what the performance of this model is as a function of the threshold. We'll use the handy `precision_recall_curve` function from `sklearn`
 
-```
+```python
 precision, recall, thresholds = precision_recall_curve(test_labels, predictions)
 thresholds = np.append(thresholds, 1)
 
@@ -96,7 +96,7 @@ plt.xlabel('threshold')
 plt.ylabel('%')
 ```
 
-![single_curve](http://i.imgur.com/HLYU9Sh.png)
+![single_curve](http://i.imgur.com/HLYU9Sh.png){: .center-image}
 
 Here's how we can read this chart: For a given threshold on the x-axis, we can see queue rate, precision, and recall expressed as percentages against the y-axis. For example, if we choose a threshold of 0.4 (all cases with a score above 0.4 get reviewed / sent an offer / whatever treatment we have at hand), then:
 
@@ -110,7 +110,7 @@ Of course, 0.4 might not be the best threshold value for this particular company
 
 The chart we produced above only shows the performance of a single train/test split. While we'd hope that this sample is indicative of likely model performance, it's better to visualize many train/test splits to get an idea of the range of possible performance outcomes. One of the simplest ways to do this is to perform many random train/test splits, and plot the curves for each. Here's what that looks like for 50 random splits on the telecom churn model:
 
-```
+```python
 clf = RandomForestClassifier(n_estimators=50, oob_score=True)
 
 n_trials = 50
@@ -151,7 +151,7 @@ plt.xlabel('threshold')
 plt.ylabel('%')
 ```
 
-![curves](http://i.imgur.com/e3g3Ec1.png)
+![curves](http://i.imgur.com/e3g3Ec1.png){: .center-image}
 
 As expected, there's some variation. Earlier, when we were just looking at a single train/test split, we said that with a threshold of 0.4, we'd expect:
 
@@ -167,7 +167,7 @@ Now we see that there is more uncertainty around these numbers. Looking at the n
 
 We can make more precise statements with a statistical visualization. Let's plot the median curves, along with a 90% central interval for each threshold:
 
-```
+```python
 import bisect
 from scipy.stats import mstats
 
@@ -210,7 +210,7 @@ plt.xlabel('threshold')
 plt.ylabel('%')
 ```
 
-![intervals](http://i.imgur.com/xKHb6c0.png)
+![intervals](http://i.imgur.com/xKHb6c0.png){: .center-image}
 
 Now we can be considerably more precise by saying that for a threshold of 0.4, we expect:
 
@@ -232,7 +232,7 @@ Even more importantly: Because you have your chart, you can see that having a 10
 
 This was just an educated guess about a better threshold; if we poke around a bit more, we find that the optimal threshold for these specific cost estimates is 0.33, which gives us a median profit of about $90,700.
 
-```
+```python
 uniform_thresholds = np.linspace(0, 1, 101)
 
 uniform_payout_plots = []
@@ -270,7 +270,7 @@ plt.ylabel('$')
 plt.title("Payout as a Function of Threshold")
 ```
 
-![payout](http://i.imgur.com/zcFEAtV.png)
+![payout](http://i.imgur.com/zcFEAtV.png){: .center-image}
 
 We can also see that there's a lot of uncertainty in the profitability of our operation; knowing this ahead of time let's you move more confidently when natural variation occurs.
 

@@ -122,7 +122,7 @@ Let's see what this looks like in a specific case. Let's say that the true rates
       <td>0.486414</td>
       <td>50</td>
     </tr>
-<table>
+</table>
 
 Using [pymc](http://pymc-devs.github.io/pymc/), let's generate \\(500,000\\) samples from the posterior distributions:
 

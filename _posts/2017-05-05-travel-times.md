@@ -1,5 +1,5 @@
 ---
-title: "History of Tech: New York to San Francisco Travel"
+title: "NY to SF, Transit Times over History"
 ---
 
 As a measure of progress in general purpose technologies, it can be fun to look at a specific problem or limitation over time to see how new tech has affected it. For example, Planet Money had an [episode](http://www.npr.org/sections/money/2016/11/30/503769949/episode-534-the-history-of-light) tracking the cost of producing a lumen of light, which decreased exponentially over time. Or, you might look at the amount of time it takes to travel from New York to San Francisco, by the fastest means available to normal consumers.

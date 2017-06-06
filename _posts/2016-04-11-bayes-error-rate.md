@@ -78,15 +78,15 @@ plt.xlim(0,10)
 plt.ylim(0,10)
 ```
 
-![predictions](http://i.imgur.com/b0lMCQM.png)
+![predictions](http://i.imgur.com/b0lMCQM.png){: .center-image}
 
 This (above) is what our predictions look like against the truth. Remember that the optimal prediction is 3M/4; So how close does our model get to this optimal prediction?
 
-![prediction](http://i.imgur.com/ZYli4GN.png)
+![prediction](http://i.imgur.com/ZYli4GN.png){: .center-image}
 
 Not bad, but not perfect. Deviations from the black line can be thought of as idiosyncratic error. The model is learning "noise" from the data set. It's interesting to dial down to a particular value of M and see what happens over time, where we'll see that the "noise" is learned out by the model as it gets more data. Let me show the image first and then explain what it depicts:
 
-![distro](http://i.imgur.com/OtSrehR.png)
+![distro](http://i.imgur.com/OtSrehR.png){: .center-image}
 
 What we're looking at here is the distribution of model predictions across those rows in our data set where `sample_*` adds up to 6. The optimal prediction for this sample is 7/4 = 1.75, which is the black line. The red line shows the distribution of predictions for a model trained on 500 data points (and tested on 500 data points). The green line shows training on 5000 and testing on 5000, and the blue line shows training on 5,000 and testing on 5,000. As you can see, the
 model converges to the optimal prediction value over time. This isn't surprising, it's what we would expect / hope. In fact, if you remember the theory behind regular least square regression, you know this optimality is provable for linear models under some distributional assumptions. The only difference here is that we're using random forests for a slightly different problem.
