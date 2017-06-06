@@ -8,9 +8,9 @@ Here are a few data points on duration, in hours, of trips from New York to San 
 
 | Year | Time (Hours) | Log Scale | Note                                                     |
 |------|--------------|-----------|----------------------------------------------------------|
-| 1810 | 4320         | 3.635     | Astoria Overseas Expedition                              |
-| 1849 | 4320         | 3.635     | Duxbury                                    |
-| 1853 | 2136         | 3.330     | Flying Cloud                                             |
+| 1810 | 4320         | 3.635     | Astoria Overseas Expedition (Sea route around Cape Horn in Patagonia.)                             |
+| 1849 | 4320         | 3.635     | Duxbury (Same)                                   |
+| 1853 | 2136         | 3.330     | Flying Cloud (Same route, faster ship.)                                            |
 | 1876 | 83           | 1.919     | Transcontinental Railroad                                |
 | 1934 | 26           | 1.415     | Boeing 247 (Prop Plane. 10 Passenger Capacity)           |
 | 1937 | 17           | 1.230     | DC-3 (Prop Plane. 32 Passenger Capacity)                 |
@@ -23,7 +23,7 @@ Here's what that looks like on a linear, and on a log (base 10) scale:
 
 ![log](http://i.imgur.com/AITyYU7.png){: .center-image}
 
-To me, there are two really interesting things here. The first is how much of a difference the transcontinental railroad made; a trip that used to take 3 to 6 *months* could now be made in 3.5 *days*, a reduction of more than 96%. To scale today, that would be like reducing the travel time from New York to San Francisco to under 15 minutes.
+To me, there are two really interesting things here. The first is how much of a difference the transcontinental railroad made; a trip that used to take 3 to 6 *months* by ship could now be made in 3.5 *days* by rail, a reduction of more than 96%. To scale today, that would be like reducing the travel time from New York to San Francisco to under 15 minutes.
 
 The second interesting thing is that transit times haven't gotten any faster since 1959. That isn't to say that planes haven't gotten faster; the [SR-71 Blackbird](https://www.wikiwand.com/en/Lockheed_SR-71_Blackbird) could make the flight in under 1.5 hours. But there are no widely-available commercial options that fast. As others have pointed out, airfare is much cheaper today than it was in 1959; so while speed hasn't improved, costs have.
 
