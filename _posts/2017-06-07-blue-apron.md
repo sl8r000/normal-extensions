@@ -6,7 +6,7 @@ Blue Apron filed its [S-1](https://www.sec.gov/Archives/edgar/data/1701114/00010
 
 1. **It's still growing fairly quickly,**
 2. **Its gross margins are healthy,** and
-3. **Its historical user economics look ok, but are more complex on a forward-looking basis.**
+3. **Its historical user economics look ok, but are less rosy on a forward-looking basis.**
 
 I think the last of these points is the most interesting, and we'll analyze it at length below. But let's hit the other two points first.
 
@@ -56,18 +56,18 @@ If pressed to guess specific ranges, I'd speculate that more recent quarterly co
 
 # Churn
 
-We don't have direct churn data from Blue Apron, but a back of the envelope calculation suggests to me that it's quite high. The cheapest subscription plan from Blue Apron is about $59 per weekly order, and most of the company's revenue comes from such plans; if a user were to receive all 26 weekly orders in a 6 month period, we'd expect the user's generated revenue to be around $$\$59 \times 26 = 1534$$. However, from the cumulative net revenue data, we know that on average, user generated revenue is only about $410 for the first six months (suggesting a retention rate around 27%) and is only about $72 for the six months between a user's 30th and 36th months (suggesting a retention rate around 5%).
+We don't have direct churn data from Blue Apron, but a back of the envelope calculation suggests to me that it's quite high. The cheapest subscription plan from Blue Apron is about $59 per weekly order, and most of the company's revenue comes from such plans; if a user were to receive all 26 weekly orders in a 6 month period, we'd expect the user's generated revenue to be at least $$\$59 \times 26 = 1534$$. However, from the cumulative net revenue data, we know that on average, user generated revenue is only about $410 for the first six months (suggesting a retention rate around 27%) and is only about $72 for the six months between a user's 30th and 36th months (suggesting a retention rate around 5%).
 
 ![churn](http://i.imgur.com/ax0CL7G.png){: .center-image}
 
-This is a very rough measure, and doesn't take into account a lot of factors (such as the fact that Blue Apron lets customers skip deliveries, thus lowering revenue but not true retention). However, it's not far off from estimates others have made. [Back in June '16](http://blog.secondmeasure.com/2016/06/27/blue-apron/), Second Measure (an analytics company that measures consumer spending data directly from credit card processing data) estimated Blue Apron's 6-month retention rate at about 28% (compared to 26.7% above) and its 12-month
+This is a very rough measure, and doesn't take into account a lot of factors (such as the fact that Blue Apron lets customers skip deliveries, thus lowering revenue but not lowering true retention). However, it's not far off from estimates others have made. [Back in June '16](http://blog.secondmeasure.com/2016/06/27/blue-apron/), Second Measure (an analytics company that measures consumer spending directly from credit card processing data) estimated Blue Apron's 6-month retention rate at about 28% (compared to 26.7% above) and its 12-month
 retention rate at 18% (compared to 12.8% above). In [October '16](https://www.1010data.com/company/blog/blue-apron-is-bringing-home-the-bacon/), 1010data (a market research firm) estimated 6-month retention at around 10%.
 
 I think this high churn rate is interesting, but not *too* concerning since Blue Apron is still able to reach a pretty high LTV (relative to CAC) of ~$310 in spite of it.
 
 # Magic Number Math
 
-Another way to measure user economics for subscription business models is the so-called "[magic number](https://www.scalevp.com/blog/magic-number-math)", which is change in revenue divided by marketing spend (measured quarterly). It's most typically applied to SaaS businesses, but since Blue Apron gets most of its revenue from it's subscription service, we can apply it here as well (with a correction for gross margin discussed below):
+Another way to measure user economics for subscription business models is the so-called "[magic number](https://www.scalevp.com/blog/magic-number-math)", which is change in revenue divided by marketing spend (measured quarterly). It's most typically applied to SaaS businesses, but since Blue Apron gets most of its revenue from its subscription service, we can apply it here as well (with a correction for gross margin discussed below):
 
 ![income](http://i.imgur.com/9R4D002.png){: .center-image}
 
@@ -79,4 +79,4 @@ The conclusion is that Blue Apron's "magic number" bounces around a lot from qua
 
 # Last Word
 
-Looking forward, I think the most crucial number to watch is Blue Apron's customer acquisition cost. At historical levels, Blue Apron's LTV/CAC looks good, and suggests an ability to profitably re-invest in user acquisition to grow its business; if this falters in the future, I think the most likely culprit will be rising CAC. This same worry about rising marketing costs shows up in the "magic number" calculation.
+Looking forward, I think the most crucial number to watch is Blue Apron's customer acquisition cost. At historical levels, Blue Apron's LTV/CAC looks good, and suggests an ability to profitably re-invest in user acquisition to grow its business; if this falters in the future, I think the most likely culprit will be rising CAC. This same worry about rising marketing costs relative to revenue growth shows up in the "magic number" calculation.
