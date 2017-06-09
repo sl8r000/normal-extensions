@@ -8,11 +8,11 @@ Blue Apron filed its [S-1](https://www.sec.gov/Archives/edgar/data/1701114/00010
 2. **Its gross margins are good** (better than I expected), and
 3. **Its historical user economics are healthy, but seem less so on a forward-looking basis.**
 
-I think the last of these points is the most interesting, and we'll analyze it at length below. But let's hit the other two points first.
+I think the last of these points is the most interesting, and we'll analyze it at length below. But let's quickly hit the other two points first.
 
 ![income](http://i.imgur.com/ZPP8WV0.png){: .enlarge}
 
-On growth, obviously Blue Apron has grown a lot  -- 338% YoY from FY 2014 to FY 2015 and 133% from FY 2015 to FY 2016 -- and is growing still -- topline revenue in Q1 2017 was $245M, up 42% from Q1 2016. Of course, growth has slowed down over time as the company matures, but I didn't expect Blue Apron to still be growing this quickly at its current scale. This revenue growth is driven primarily by the acquisition of new users, as average order size (~4.2) and order amount (~$58) per active customer have been pretty stable over the time period presented in the S-1 (Q1 2015 to Q1 2017).
+On growth, obviously Blue Apron has grown a lot  -- 338% YoY from FY 2014 to FY 2015 and 133% from FY 2015 to FY 2016 -- and is growing still -- topline revenue in Q1 2017 was $245M, up 42% from Q1 2016, which was a stand-out quarter last year. (Blue Apron added $55M of revenue from Q4 2015 to Q1 2016, its biggest quarter-over-quarter increase to date; the company attributes this to the introduction of their Family Plan.) Of course, growth has slowed down over time as the company matures, but I didn't expect Blue Apron to still be growing this quickly at its current scale. This revenue growth is driven primarily by the acquisition of new users, as average order size (~4.2) and order amount (~$58) per active customer have been pretty stable over the time period presented in the S-1 (Q1 2015 to Q1 2017).
 
 On the second point, Blue Apron has improved its gross margins over time, and they're better than I had expected. Gross margins went from around 7% in FY 2014 to 23% in FY 2015 to 33% in FY 2016, and seem to have stabilized around 30% to 35% in the most recent quarters. These improvements in margin seem sustainable, since they were driven by operating improvements that look continuable into the future. Specifically, Blue Apron attributes the ~16% improvement from '14 to '15 to:
 
@@ -28,7 +28,7 @@ The company attributes the ~10% improvement from '15 to '16 to:
 
 The take-away for me is that these improvements seem real and sustainable, and I'd expect Blue Apron to hold or improve its ~33% gross margin into the future. 
 
-Now let's get to the fun part, the user economics.
+Now let's get to the fun part, the user economics. We'll look at three things: [1] CAC and LTV, [2] Churn, and [3] the so-called "magic number."
 
 # CAC and LTV
 
@@ -70,7 +70,7 @@ Another way to measure user economics for subscription business models is the so
 
 ![income](http://i.imgur.com/9R4D002.png){: .center-image}
 
-The rule of thumb for the "magic number" is that values below 0.5 are bad, values between 0.5 and 1.0 are ok, and values above 1.0 are good. However, this metric was invented for SaaS businesses, which have very high gross margins (Salesforce: ~75%, Box: ~72%, Workday: ~70%, etc.), while Blue Apron's gross margin is around 33%. So we need to adjust our figures. A magic number of 1.0 for a business with 70% gross margins is akin to a magic number of $$2.12 = 70\%/33\%$$ for a business with 33% gross margins, since this normalizes gross profit. So we would divide our "raw" magic number by 33/70 to make our comparison with SaaS rules of thumb more apples-to-apples; that's the number presented as `Adj. Magic Number (33/70)` above.
+The rule of thumb for the "magic number" is that values below 0.5 are bad, values between 0.5 and 1.0 are ok, and values above 1.0 are good. However, this metric was invented for SaaS businesses, which have very high gross margins (Salesforce: ~75%, Box: ~72%, Workday: ~70%, etc.), while Blue Apron's gross margin is around 33%. So we need to adjust our figures. A magic number of 1.0 for a business with 70% gross margins is akin to a magic number of $$2.12 = 70\%/33\%$$ for a business with 33% gross margins, since this normalizes gross profit. So we would divide our "raw" magic number by 70/33 (or multiply by 30/77) to make our comparison with SaaS rules of thumb more apples-to-apples; that's the number presented as `Adj. Magic Number (33/70)` above.
 
 The conclusion is that Blue Apron's "magic number" bounces around a lot from quarter to quarter (particularly in Q1 each year, due to a seasonal boost in user acquisitions), and definitely has a decreasing trend. I think it will be in the "bad to ok" zone of sub 1.0 for the remainder of 2017.
 
